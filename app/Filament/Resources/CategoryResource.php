@@ -28,7 +28,7 @@ class CategoryResource extends Resource
             ->schema([
                 Forms\Components\Section::make()->schema([
 
-                    SpatieMediaLibraryFileUpload::make('image')
+                    SpatieMediaLibraryFileUpload::make('imagess')
                         ->translateLabel()
                         ->collection(fn() => (new self::$model)->getPrimaryMediaCollection())
                         ->avatar()
